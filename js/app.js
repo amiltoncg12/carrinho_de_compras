@@ -4,8 +4,8 @@ limpar();
 function adicionar(){
     // declarando as variaveis
     let produtos = document.getElementById("produto").value;
-    let nomeProduto = produtos.split("-")[0];
-    let precoProduto = produtos.split("R$")[1];
+    let nomeProduto = produtos.split("-")[0]; // separando o nome do produto na variavel
+    let precoProduto = produtos.split("R$")[1]; // separando o valor do produto na variavel
 
     let quantidade = document.getElementById("quantidade").value;
 
@@ -27,6 +27,7 @@ function adicionar(){
     let valorFinal = document.getElementById("valor-total");
     valorFinal.textContent = precoFinal
 
+    // linpando a quantidade depois que adicina no carrinho
     document.getElementById("quantidade").value = " ";
 };
 
